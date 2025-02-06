@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            display: flex;
+            justify-content: center;
+            height: 100px;
+            align-items: center;
+        }
+        .btn{
+            background-color: rgb(135, 135, 132);
+            color: aliceblue;
+            border: solid 1px black;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+        }
+        .bg{
+            background-color: aquamarine;
+            display: flex;
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+          
+        }
+        .content{
+            background-color: aliceblue;
+            width: 300px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+                   
+        }
+        .close{
+            padding-left: 300px;
+            cursor: pointer;
+        }
+        .botones{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        p{
+            display: flex;
+            justify-content: center;
+        }
+        .cancel{
+            background-color: rgb(193, 112, 112);
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .delete{
+            background-color: rgb(196, 231, 116);
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Modal</h1>
+        <div class="btn"> Modal mode</div>
+    </div>
+
+    <div class="modal">
+        <div class="bg">
+            <div class="close">
+                X
+            </div>
+            <div class="content">
+                <h1>Delete file?</h1>
+                <p>Are you sure you want to delete the file?</p>
+                <div class="botones">
+                    <button class="cancel">Cancel</button>
+                    <button class="delete">Delete</button>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

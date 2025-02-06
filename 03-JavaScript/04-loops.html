@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Haslo tu mismo 2 JS</h1>
+    
+    <Button onclick="calcularSuma()">Suma de 5 numeros </Button>
+    <p id="sum"></p>
+    
+    <script>
+       
+        const calcularSuma= () =>{
+            let suma=0;
+        for (let i = 0; i< 5; i++) {
+            console.log(suma);
+            let InputData=prompt(`Por favor ingreser el ${i+1} digito`);
+            let numberInputData=parseInt(InputData);
+            if (isNaN(numberInputData)) {
+                alert('Solo se permiten numeros, intente denuevo');
+                i--;
+            }
+            else{ 
+                suma += numberInputData
+            }
+
+           
+           
+            
+        }
+
+        document.getElementById("sum").innerHTML=suma;
+    }
+    </script>
+</body>
+</html>

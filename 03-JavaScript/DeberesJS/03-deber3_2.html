@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ingreso de detalles</h1>
+    
+    <Button onclick="Unir()">Mostrar</Button>
+    <p id="myp"></p>
+      
+    <script>
+       
+        const Unir= () =>{
+            let prom=0;
+            let suma=0;
+            let city=prompt(`Por favor ingreser el nombre de su ciudad:`);
+            let country=prompt(`Por favor ingreser el nombre de su pais:`);
+            let detalles= city+country;    
+            alert(detalles);
+            document.getElementById("myp").innerHTML=detalles;    
+        }
+  
+        
+    
+    </script>
+</body>
+</html>

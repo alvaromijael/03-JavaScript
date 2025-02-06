@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Haslo tu mismo 3 JS</h1>
+    
+    <Button onclick="calcularSuma()">calcula suma, porcentaje y arriba de 1000 </Button>
+    <p id="sum"></p>
+    <p id="average"></p>
+    <p id="above1000" ></p>
+    
+    <script>
+       
+        const calcularSuma= () =>{
+            let suma=0;
+            let abv=0;
+        for (let i = 0; i< 5; i++) {
+            console.log(suma);
+            let InputData=prompt(`Por favor ingreser el ${i+1} salario`);
+            let numberInputData=parseInt(InputData);
+            if (isNaN(numberInputData)) {
+                alert('Solo se permiten numeros, intente denuevo');
+                i--;
+            }
+            else{ 
+                suma += numberInputData;
+               
+                avrg = suma/5;  
+                
+                
+                if (numberInputData>= 1000) {
+                  abv++;  
+                }
+            }
+
+           
+           
+            
+        }
+
+        document.getElementById("sum").innerHTML=suma;
+        document.getElementById("average").innerHTML=avrg;
+        document.getElementById("above1000").innerHTML=abv;
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Button onclick="findNumberIntoArray3([1, 6, 2, 9],3)">generar </Button>
+    <p id="output"></p>
+    <script>
+        /*function maxBetween3Numbers(n1,n2,n3){
+            let maxNumber=Math.max(n1,n2,n3);
+            console.log(maxNumber);
+        }
+
+        //ejercicio 2 
+        const maxBetween3Numbers=function(n1,n2,n3){
+            let maxNumber=Math.max(n1,n2,n3);
+            console.log(maxNumber);
+        }
+
+        //ejercicio 3
+        const maxBetween3Numbers=(n1,n2,n3) =>{
+            let maxNumber=Math.max(n1,n2,n3);
+            console.log(maxNumber);
+        }
+
+        //ejercicio 4 
+        //Escribe una función de declaración que acepte un arreglo y retorne el número más grande.
+        // los ... se coloca porque el arreglo que se envia no es un numero entonces el operador hace que sea numero 
+        function getMaxNumber(arreglo){
+            let maxNumber=Math.max(...arreglo);
+            console.log(maxNumber);
+            return maxNumber;
+        }
+
+        //ejercicio 5  
+        const getMaxNumber1=function(array){
+            console.log(Math.max(...array));
+            alert(Math.max(...array))
+            return Math.max(...array);
+            
+        }
+
+
+        //ejercicio 6
+        const getMaxNumber2=(array)=>{
+            console.log(Math.max(...array));
+            alert(Math.max(...array))
+            return Math.max(...array);
+            
+        }*/
+
+        //Ejercicio 7
+
+        function findNumberIntoArray(array,number){
+            let isNumberPresent=array.find((elemento)=>elemento==number);
+            return isNumberPresent>=0 ? console.log(true):console.log(false);
+        }
+
+        // Ejercicio 8 
+
+        const findNumberIntoArray3=function(array,number){
+            let isNumberPresent=array.find((elemento)=>elemento==number);
+            return isNumberPresent>=0 ? console.log(true):console.log(false);
+        }
+
+        // Ejercicio 9 
+        const findNumberIntoArray4=(array,number)=>{
+            let isNumberPresent=array.find((elemento)=>elemento==number);
+            return isNumberPresent>=0 ? console.log(true):console.log(false); 
+        }
+
+
+    </script>
+</body>
+</html>
+

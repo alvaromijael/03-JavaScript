@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hidden{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <div id="ID">
+        <p class="myClass">
+            Hola mundo
+        </p>
+        <p class="myClass">
+            Soy Alvaro
+        </p>
+        <p class="myClass">
+
+        </p>
+        <ol>
+
+        </ol>
+
+        <ul class="navLinks" id="navLinks">
+            <li value="100">primero</li>
+            <li>segundo</li>
+        </ul>
+
+        <button onclick="show()">Mostrar</button>
+        <button onclick="hide()">Esconder</button>
+
+    </div>
+    <h1>
+
+    </h1>
+    <img src="" alt="">
+    <script>
+        console.log(document.body);
+        console.log(document.url);
+        console.log(document.title);
+        console.log(document.getElementsByClassName("myclass"));
+        console.log(document.getElementsByTagName('h1'));
+        console.log(document.querySelector('myClass'));
+        console.log(document.querySelectorAll('myClass'));
+
+        //Ejemplo
+        let unoderLisTag=document.getElementById('navLinks');
+        console.log(unoderLisTag);
+        
+        let liTags=document.getElementsByTagName('li');
+        console.log(liTags);
+        console.log(liTags[0].innerHTML);
+        console.log(liTags[0].value);
+        console.log(liTags[1].innerHTML);
+        console.log(liTags[1].value);
+
+        // crear elementos
+        let newLi=document.createElement('li');
+        newLi.innerText='Tercero';
+        console.log(newLi);
+        unoderLisTag.appendChild(newLi);
+
+        // Con el foreach esconde todos los elementos de la lista, si quiero solo el primero quito el All y for each
+        const show =()=>{
+            document.querySelectorAll('.myClass').forEach(element => {
+                (element.classList.remove("hidden"))
+            });
+        }
+
+        const hide =()=>{
+            document.querySelectorAll('.myClass').forEach(element => {
+                (element.classList.add("hidden"))
+            });
+        }
+
+        
+
+    </script>
+</body>
+</html>

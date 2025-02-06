@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Tabla del 5</h1>
+    <Button onclick="tablaMultiplicarWhile()">generar</Button>
+
+
+
+    <script>
+            const tablaMultiplicarWhile = () => {
+                let res = 0;
+                let i = 0;
+                while (i < 10) {
+                    console.log(`Tabla del ${i + 1}`)
+                    let j = 0;
+                    while (j < 10) {
+                        res = (i + 1) * (j + 1);
+                        console.log(`${i + 1} * ${j + 1} = ${res}`)
+                        j++;
+                    }
+                    console.log("\n")
+                    i++;
+                }
+            }
+
+
+
+
+        
+    </script>
+</body>
+
+</html>

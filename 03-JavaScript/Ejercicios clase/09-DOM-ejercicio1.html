@@ -1,0 +1,23 @@
+<html>
+
+<body>
+    <h1>Change second to red 😱</p>
+        <button onclick="changeSecondItemToRed()">Change second to red</button>
+        <ul id="friends-list">
+            <li>hi 😇</li>
+            <li>by 👺</li>
+            <li>dy 👻</li>
+        </ul>
+        <script>
+            function changeSecondItemToRed() {
+                // your implementation
+                let listaUlTag =document.getElementById("friends-list");
+                console.log(listaUlTag);
+                let listaLiTags=document.getElementsByTagName('li');
+                console.log(listaLiTags);
+                listaLiTags[1].style.color='red';
+            }
+        </script>
+</body>
+
+</html>

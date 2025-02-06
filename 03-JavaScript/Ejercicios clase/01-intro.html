@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hazlo en clase1</title>
+    <style>
+        .box {
+            width: 10px;
+            height: 100px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="enlarge()">Click me</button>
+    <button onclick="reset()">Reset caption</button>
+    <p id="details">Aquí están los detalles.</p>
+    <div class="box" id="myDiv"></div>
+
+    <script>
+        function reset() {
+            let div = document.getElementById('myDiv');
+            div.style.width = '10px';
+            div.style.backgroundColor = 'yellow';
+        }
+
+        function enlarge() {
+            let div = document.getElementById('myDiv');
+            let currentWidth = parseInt(div.style.width);
+            div.style.width = (currentWidth + 10) + 'px';
+        }
+    </script>
+</body>
+</html>

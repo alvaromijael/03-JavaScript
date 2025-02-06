@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: solid green 1px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <input type="color" id="backcolor" value="#ffffff">
+    <button onclick="selectBackColor()">Cambiar color de fondo</button>
+    <input type="color" id="colorInput" value="#ffffff">
+    <button onclick="selectTextColor()">Cambiar color de texto</button>
+    <div class="box" id="myDiv">
+        <p>Este es mi ejercicio 3</p>
+    </div>
+
+    <script>
+        function selectBackColor(){
+            let colorElegido = document.getElementById('backcolor').value;
+            document.getElementById('myDiv').style.backgroundColor=colorElegido;
+        }
+        function selectTextColor(){
+            let colorElegido2 = document.getElementById('colorInput').value;
+            document.getElementById('myDiv').style.color=colorElegido2;
+        }
+
+    </script>
+
+</body>
+</html>

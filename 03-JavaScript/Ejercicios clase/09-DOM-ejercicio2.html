@@ -1,0 +1,22 @@
+<html>
+
+<body>
+    <h1>Please add friends 💕</p>
+        <input type="text" id="friend" placeholder="add friend">
+        <button onclick="addFriend ()">Add friend </button>
+        <ul id="myFriends"></ul>
+</body>
+<script>
+    function addFriend() {
+        //let amigo=document.getElementById('friend').value;
+        let newLi=document.createElement('li');
+        newLi.innerHTML=document.getElementById('friend').value;
+        console.log(newLi);
+        let parent=document.getElementById('myFriends');
+        parent.appendChild(newLi);
+    }
+</script>
+
+</html>
+1
+Hazlo tú mismo 2

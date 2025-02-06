@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Promedio de 3 numeros</h1>
+    
+    <Button onclick="calcularProm()">calcula</Button>
+    <p id="myp"></p>
+  
+    
+    <script>
+       
+        const calcularProm= () =>{
+            let prom=0;
+            let suma=0;
+
+        for (let i = 0; i<3; i++) {
+            console.log(suma);
+            let InputData=prompt(`Por favor ingreser el ${i+1} valor`);
+            let numberInputData=parseInt(InputData);
+            if (isNaN(numberInputData)) {
+                alert('Solo se permiten numeros, intente denuevo');
+                i--;
+            }
+            else{
+                suma += numberInputData;
+                
+            }
+         
+        }
+        prom=suma/3;
+        alert(prom);
+        document.getElementById("myp").innerHTML=prom;
+        
+    }
+    </script>
+</body>
+</html>

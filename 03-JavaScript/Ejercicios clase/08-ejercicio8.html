@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Numero mayor</h1>
+    
+    <Button onclick="calcular()">calcula</Button>
+   
+  
+    
+    <script>
+       
+        const calcular= () =>{
+            let suma=0;
+            
+            let num1=prompt(`Por favor ingreser el primer valor`);
+            let num2=prompt(`Por favor ingreser el segundo valor`);
+            let n1=parseInt(num1);
+            let n2=parseInt(num2);
+            if (n1>n2) {
+                alert(`el numero mayor es ${n1}`);
+              
+            }
+            else{
+                alert(`el numero mayor es ${n2}`);
+                
+            }
+         
+        
+                 
+    }
+    </script>
+</body>
+</html>
